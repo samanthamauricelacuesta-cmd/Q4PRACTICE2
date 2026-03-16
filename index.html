@@ -13,18 +13,19 @@
     function teamrank(){
         var rank = "1st";//string
 
-        switch(rank){
-            case "1st":
-                alert("RED CHAMPION!")
-            case "2nd":
-                alert("u aint us!")
-            case "3rd":
-                alert("ur meh!")
-            case "4th":
-                alert("ur bad!")
+        switch(true){
+            case (rank === "1st"):
+                message = ("RED CHAMPION!")
+            case (rank === "2nd"):
+                message = ("u aint us!")
+            case (rank === "3rd"):
+                message = ("ur meh!")
+            case (rank === "4th"):
+                message = ("ur bad!")
             default:
-                alert("ur team is trash")
+                message = ("ur team is trash")
         }
+        alert(message);
     }
 
 
